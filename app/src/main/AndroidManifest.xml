@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.teamfixit.myburger">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/burger"
+        android:label="MY BURGER"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Myburger">
+        <activity android:name="com.teamfixit.myburger.Ongoing_get_order_details"/>
+        <activity android:name="com.teamfixit.myburger.OngoingList" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name="com.teamfixit.myburger.assign_order" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name="com.teamfixit.myburger.Driver_OngoingList" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name="com.teamfixit.myburger.driver_Add" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name="com.teamfixit.myburger.OrderList" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name="com.teamfixit.myburger.OrderConfirmation" />
+        <activity android:name="com.teamfixit.myburger.InsertPayment" />
+        <activity android:name="com.teamfixit.myburger.InsertDelivery" />
+        <activity android:name="com.teamfixit.myburger.update_user_profile" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name="com.teamfixit.myburger.userProfile" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name="com.teamfixit.myburger.register" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name="com.teamfixit.myburger.Login" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name="com.teamfixit.myburger.startup_screen" android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.teamfixit.myburger.user_inside_food_item" />
+        <activity android:name="com.teamfixit.myburger.user_Home_Page" />
+        <activity android:name="com.teamfixit.myburger.add_product" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name="com.teamfixit.myburger.MainActivity" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:name="com.teamfixit.myburger.admin_food_list"
+            android:label="Food List"
+            android:parentActivityName="com.teamfixit.myburger.add_product" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
