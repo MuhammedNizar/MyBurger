@@ -68,7 +68,7 @@ public class Login extends AppCompatActivity {
                     intent.putExtra("username1",s1);
                     startActivity(intent);
 
-                } else if (s1.equals("admin") && s2.equals("admin123")){
+                } else if (s1.equals("admin123") && s2.equals("admin123")){
 
                     Intent intent = new Intent(Login.this,MainActivity.class);
                     startActivity(intent);
